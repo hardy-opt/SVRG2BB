@@ -50,20 +50,22 @@ SVRGBB/
 
 This project addresses two main objective functions in convex optimization:
 
-**L2-Regularized Logistic Regression:**
+### 1. L2-Regularized Logistic Regression:
+
 $$
 \min_w F(w) = \frac{1}{n} \sum_{i=1}^n \log(1 + \exp(-b_i a_i^T w)) + \frac{\lambda}{2} \|w\|^2
 $$
 
-**L2-Squared Support Vector Machine (SVM):**
+### 2. L2-Squared Support Vector Machine (SVM):
+
 $$
 \min_w F(w) = \frac{1}{2n} \sum_{i=1}^n (\max(0, 1 - b_i a_i^T w))^2 + \frac{\lambda}{2} \|w\|^2
 $$
 
-Where:
-- \( a_i \in \mathbb{R}^d \): Feature vector  
-- \( b_i \in \{ \pm 1 \} \): Binary label  
-- \( \lambda \): L2 regularization parameter
+### Where:
+* $a_i \in \mathbb{R}^d$: Feature vector
+* $b_i \in \{ \pm 1 \}$: Binary label
+* $\lambda$: L2 regularization parameter
 
 ---
 
