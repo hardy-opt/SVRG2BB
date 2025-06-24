@@ -123,25 +123,27 @@ This creates `.eps` plots stored in subfolders like `Figures/adult/`, `Figures/g
 
 The Gisette dataset is used to benchmark convergence speed and variance reduction.
 
-### Gisette dataset: $\#n : 6000 , \#d: 5001 \text{ and } \lambda = 1e-5 $
+### Gisette dataset: $n = 6000 , d = 5001 \text{ and } \lambda = 1e-5 $
 
 #### 1. Optimality Gap vs. Epoch
 Convergence behavior of SVRG variants showing reduction in cost per epoch and SVRG-2BB is outperforms other methods.
 
 <!--[Legend](Figures/Legend.png) -->
 <img src="Figures/Legend.png" width="50%">
-<img src="Figures/Gisette-1.0e-05-Opt_Epoch.png" width="50%">
+<img src="Figures/Gisette-1.0e-05-Opt_Epoch.png" width="40%">
 
 #### 2. Optimality Gap vs. CPU Time
 Illustrates computational efficiency of each SVRG variant. Also, SVRG-2BB outperforms other methods.
 
-<img src="Figures/Gisette-1.0e-05-Opt_Time.png" width="50%">
+<img src="Figures/Legend.png" width="50%">
+<img src="Figures/Gisette-1.0e-05-Opt_Time.png" width="40%">
 
 
 #### 3. Variance vs. Epoch
 Demonstrates variance reduction across epochs for stochastic gradients.
 
-<img src="Figures/Gisette-1.0e-05-Var_Epoch.png" width="50%">
+<img src="Figures/Legend.png" width="50%">
+<img src="Figures/Gisette-1.0e-05-Var_Epoch.png" width="40%">
 
 ---
 
