@@ -28,7 +28,6 @@ SVRGBB/
 ├── SGD_lib/                    # Utility tools for learning rate, epochs, etc.
 ├── SVRG_BB/                    # Main repo for SVRG-2BB proposed method
 │   ├── data/w8a.m              # Datasets (MAT files - eg. w8a.mat) and data loaders(w8a.m)
-│   ├── SVRG_NUMERICAL_EXP.m    # Main experiment script
 │   ├── Results_2022/           # Results from 2022 experiments
 │   ├── Results_July2022/       # Latest experiment results
 │   ├── BB_optimizers/bb_solvers/ # Core implementations of SVRG-BB methods
@@ -41,6 +40,7 @@ SVRGBB/
 │   ├── mnist38/
 │   ├── ijcnn/
 │   └── Figure_M1_M4/
+├──SVRG_NUMERICAL_EXP.m    # Main experiment script
 └── README.md
 ```
 
@@ -88,12 +88,7 @@ $$
 ## ▶️ Running Experiments
 0. First of all add the whole folder in MATLAB path.
 1. Ensure MATLAB (R2019a or later) is installed.
-2. Navigate to the experiment folder:
-
-```matlab
-cd SVRGBB/SVRG_BB/
-```
-
+2. Navigate to the experiment file
 3. Run the experiment script:
 
 ```matlab
@@ -128,46 +123,25 @@ This creates `.eps` plots stored in subfolders like `Figures/adult/`, `Figures/g
 
 The Gisette dataset is used to benchmark convergence speed and variance reduction.
 
-### Example Figures (\[\lambda = 10^-5\])
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures2/Legend.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures2/Gisette-1.0e-05-Opt_Epoch.png" title="example image" class="img-fluid rounded z-depth-1" %}
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures2/Gisette-1.0e-05-Opt_Time.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/figures2/Gisette-1.0e-05-Var_Epoch.png" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-Gisette dataset: \[\#n : 6000 , \#d: 5001\] and  \[\lambda = 1e-5 \]
-</div>
+### Gisette dataset: $\#n : 6000 , \#d: 5001 \text{ and } \lambda = 1e-5 $
 
 #### 1. Optimality Gap vs. Epoch
 Convergence behavior of SVRG variants showing reduction in cost per epoch and SVRG-2BB is outperforms other methods.
 
-![Legend](Figures/Legend.png)
-![Optimality gap vs. Epoch](Figures/Gisette-1.0e-05-Opt_Epoch.png)
+<!--[Legend](Figures/Legend.png) -->
+<img src="Figures/Legend.png" width="50%">
+<img src="Figures/Gisette-1.0e-05-Opt_Epoch.png" width="50%">
 
 #### 2. Optimality Gap vs. CPU Time
 Illustrates computational efficiency of each SVRG variant. Also, SVRG-2BB outperforms other methods.
 
-![Optimality gap vs. CPU time](Figures/Gisette-1.0e-05-Opt_Time.png)
+<img src="Figures/Gisette-1.0e-05-Opt_Time.png" width="50%">
 
 
 #### 3. Variance vs. Epoch
 Demonstrates variance reduction across epochs for stochastic gradients.
 
-![Variance vs. Epoch](Figures/Gisette-1.0e-05-Var_Epoch.png)
+<img src="Figures/Gisette-1.0e-05-Var_Epoch.png" width="50%">
 
 ---
 
