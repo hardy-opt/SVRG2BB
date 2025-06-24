@@ -77,7 +77,7 @@ $$
 - **`ploter.m`**  
   Script in `Figures/` to generate `.eps` plots for optimality gap, variance, and convergence diagnostics.
 
-- **`W8A.mat`** and  
+- **`W8A.mat`** and **`W8A.m`** are
   Example data loader and preprocessor for the W8A dataset.
 
 - **`JIMO_SVRG_2BB.pdf`**  
