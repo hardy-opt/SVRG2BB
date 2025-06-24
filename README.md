@@ -80,9 +80,6 @@ $$
 - **`W8A.mat`** and **`W8A.m`** are
   Example data loader and preprocessor for the W8A dataset.
 
-- **`JIMO_SVRG_2BB.pdf`**  
-  Full research paper with theoretical guarantees, algorithm derivations, and benchmark results.
-
 ---
 
 ## ▶️ Running Experiments
