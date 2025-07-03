@@ -1,3 +1,8 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function preprocesses the IJCNN1 dataset and returns a structured data object.
+% It normalizes the training and test data, adds a bias term, shuffles the data,
+% and initializes model weights.
 function data = IJCNN1(seed)
 % IJCNN1 - Preprocesses the IJCNN1 dataset and returns a structured data object
 %

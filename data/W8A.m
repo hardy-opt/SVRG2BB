@@ -1,3 +1,8 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function preprocesses the W8A dataset and returns a structured data object.
+% It normalizes the training and test data, adds a bias term, shuffles the data,
+% and initializes model weights.
 function data = W8A(seed)
 % W8A - Preprocesses the W8A dataset and returns a structured data object
 %

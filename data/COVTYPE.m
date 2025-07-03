@@ -1,3 +1,6 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function preprocesses the Covtype dataset and returns a structured data object.
 function data = COVTYPE(seed)
 % COVTYPE - Preprocesses the Covtype dataset and returns a structured data object
 %

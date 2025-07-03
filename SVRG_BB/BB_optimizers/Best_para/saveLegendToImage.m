@@ -1,3 +1,5 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
 function saveLegendToImage(figHandle, legHandle, ...
 fileName, fileType)
 

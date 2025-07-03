@@ -1,3 +1,6 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function loads and preprocesses the UCI Adult dataset for training and testing.
 function data = ADULT(seed)
 % ADULT - Loads and preprocesses the UCI Adult dataset for training and testing
 % Input:

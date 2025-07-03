@@ -1,4 +1,13 @@
 function [w, infos] = svrgbbb(problem, in_options,mval)
+% Stochastic Variance gradient descent with second order information via Barzilai-Borwein (SVRG-2BBNS) method algorithm with BB step size.
+%
+% Inputs:
+%       problem     function (cost/grad/hess)
+%       in_options  options
+% Output:
+%       w           solution of w
+%       infos       information
+% Originally Created by H. Tankaria
 
 
     % set dimensions and samples

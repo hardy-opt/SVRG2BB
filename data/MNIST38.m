@@ -1,3 +1,9 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function preprocesses the MNIST 3-vs-8 dataset and returns a structured data object.
+% It normalizes the training and test data, adds a bias term, shuffles the data,
+% and initializes model weights.
+
 function data = MNIST38(seed)
 % MNIST38 - Preprocesses the MNIST 3-vs-8 dataset and returns a structured data object
 %

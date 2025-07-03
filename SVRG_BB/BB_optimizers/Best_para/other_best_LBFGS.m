@@ -1,3 +1,5 @@
+% Originally Created by H. Tankaria
+
 function [best] = other_best_LBFGS(path,find_par,regul)
     reg=regul;% 0.1 0.01 0.001 0.0001 0.00001];
     step = [1000 100 10 1 0.1 0.01 0.001 0.0001 0.00001];

@@ -1,3 +1,5 @@
+% Originally Created by H. Tankaria
+
 function legendmarkeradjust(varargin)
     a1=ver('matlab');
     rls=a1.Release;

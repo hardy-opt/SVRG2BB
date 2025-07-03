@@ -1,3 +1,7 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function finds the best parameters from the saved files in a given path.
+% It returns the best parameters based on either accuracy or optimality gap.
 function [best] = other_best(path,find_par,regul)
     reg=regul;% 0.1 0.01 0.001 0.0001 0.00001];
     step = [10000 1000 100 10 1 0.1 0.01 0.001 0.0001 0.00001];

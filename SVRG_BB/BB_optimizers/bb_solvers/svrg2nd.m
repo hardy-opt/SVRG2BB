@@ -7,17 +7,7 @@ function [w, infos] = svrg2nd(problem, in_options)
 % Output:
 %       w           solution of w
 %       infos       information
-%
-% References:
-%       Rie Johnson and Tong Zhang, 
-%       "Accelerating Stochastic Gradient Descent using Predictive Variance Reduction,"
-%       NIPS, 2013.
-%    
-% This file is part of SGDLibrary.
-%
-% Created by H.Kasai on Feb. 15, 2016
-% Modified by H.Kasai on Mar. 25, 2018
-
+% Originally Created by H. Tankaria
 
     % set dimensions and samples
     d = problem.dim();

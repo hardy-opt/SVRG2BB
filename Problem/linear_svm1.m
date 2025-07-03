@@ -1,3 +1,10 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Kasai on 2023-10-01
+% This class defines a linear SVM problem with methods for cost, gradient,
+% Hessian, and various optimization techniques.
+% It supports training and testing on datasets, and provides methods for
+% calculating accuracy, predictions, and approximating the Hessian.
+
 classdef linear_svm1
 % This file defines l2-regularized SVM problem
 %
@@ -18,13 +25,9 @@ classdef linear_svm1
 %           f_i(w) = 1/2 * (max(0.0, 1 - y_i .* (w'*x_i) )^2 + lambda/2 * w^2.
 %
 % "w" is the model parameter of size d vector.
-%
-%
-% This file is part of GDLibrary and SGDLibrary.
-%
-% Created by H.Kasai on Feb. 17, 2016
-% Modified by H.Kasai on Mar. 23, 2018
-
+% "x_i" is the i-th column of x_train, which is a d x n matrix.
+% "y_i" is the i-th element of y_train, which is a 1 x n vector.
+% "lambda" is the regularization parameter.
     properties
         name;    
         dim;

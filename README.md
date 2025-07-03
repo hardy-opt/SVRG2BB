@@ -1,5 +1,5 @@
 
-# SVRGBB: Stochastic Variance Reduced Gradient with Barzilai-Borwein Approximation
+# SVRG-2BB: Stochastic Variance Reduced Gradient with Barzilai-Borwein Approximation
 
 This repository contains MATLAB implementations and experimental results for various **Stochastic Variance Reduced Gradient (SVRG)** methods, with a particular focus on novel approaches incorporating the **Barzilai-Borwein (BB) approximation**. We consider improving the stochastic variance reduce gradient (SVRG) method by incorporating the curvature information of the objective function. We propose to reduce the variance of stochastic gradients using the computationally efficient Barzilai-Borwein (BB) method by incorporating it into the SVRG. We also incorporate a BB-step size as a variant. We conduct the numerical experiments on the benchmark datasets and demonstrate that the proposed method with a constant step size outperforms the existing variance reduced methods for some test problems.
 
@@ -24,7 +24,7 @@ The project is designed to efficiently solve large-scale machine learning optimi
 ## 📁 Project Structure
 
 ```bash
-SVRGBB/
+SVRG2BB/
 ├── SGD_lib/                    # Utility tools for learning rate, epochs, etc.
 ├── SVRG_BB/                    # Main repo for SVRG-2BB proposed method
 │   ├── data/w8a.m              # Datasets (MAT files - eg. w8a.mat) and data loaders(w8a.m)
@@ -103,7 +103,7 @@ After running the main script, generate performance figures:
 1. Navigate to:
 
 ```matlab
-cd SVRGBB/Figures/
+cd SVRG2BB/Figures/
 ```
 
 2. Run:

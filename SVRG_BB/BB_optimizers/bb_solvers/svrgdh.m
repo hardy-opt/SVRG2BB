@@ -1,5 +1,15 @@
  function [w, infos] = svrgdh(problem, in_options)
-% Stochastic Variance gradient descent (SVRG) algorithm.
+%% Stochastic Variance gradient descent with second order information via diagonal Hessian
+%
+% Inputs:
+%       problem     function (cost/grad/hess)
+%       in_options  options
+% Output:
+%       w           solution of w
+%       infos       information
+% Originally Created by H. Tankaria
+
+
 
 
     % set dimensions and samples

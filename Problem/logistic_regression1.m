@@ -1,4 +1,9 @@
-
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This class implements logistic regression with methods for cost, gradient,
+% Hessian, and various optimization techniques.
+% It supports training and testing on datasets, and provides methods for
+% calculating accuracy, predictions, and approximating the Hessian.
 
 classdef logistic_regression1
     

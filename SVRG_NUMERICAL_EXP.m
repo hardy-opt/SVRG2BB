@@ -1,3 +1,7 @@
+% Originally Created by H. Tankaria
+% Last Modified by H. Tankaria on 2023-10-01
+% This function runs SVRG and its variants on different datasets and saves the results.
+% It iterates over datasets, methods, regularization parameters, and step sizes.
 function  SVRG_NUMERICAL_EXP()
 
     clc;

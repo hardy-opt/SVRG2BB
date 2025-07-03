@@ -1,5 +1,5 @@
 function [w, infos] = svrgbb(problem, in_options)
-% Stochastic Variance gradient descent with Barzilai-Borwein (SVRG-BB) algorithm.
+% Stochastic Variance gradient descent with second order information via Barzilai-Borwein (SVRG-BB) algorithm.
 %
 % Inputs:
 %       problem     function (cost/grad/hess)
@@ -7,17 +7,7 @@ function [w, infos] = svrgbb(problem, in_options)
 % Output:
 %       w           solution of w
 %       infos       information
-%
-% References:
-%       C. Tan, S. Ma, Y. Dai, and Y. Qian, 
-%       "Barzilai-Borwein Step Size for Stochastic Gradient Descent,"
-%       NIPS, 2016.
-%    
-% This file is part of SGDLibrary.
-%
-% Created by H.Kasai on Nov. 1, 2016
-% Modified by H.Kasai on Mar. 25, 2018
-
+% Originally Created by H. Tankaria
 
     % set dimensions and samples
     d = problem.dim();
