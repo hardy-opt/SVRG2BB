@@ -3,7 +3,7 @@
 
 This repository contains MATLAB implementations and experimental results for various **Stochastic Variance Reduced Gradient (SVRG)** methods, with a particular focus on novel approaches incorporating the **Barzilai-Borwein (BB) approximation**. We consider improving the stochastic variance reduce gradient (SVRG) method by incorporating the curvature information of the objective function. We propose to reduce the variance of stochastic gradients using the computationally efficient Barzilai-Borwein (BB) method by incorporating it into the SVRG. We also incorporate a BB-step size as a variant. We conduct the numerical experiments on the benchmark datasets and demonstrate that the proposed method with a constant step size outperforms the existing variance reduced methods for some test problems.
 
-The project is designed to efficiently solve large-scale machine learning optimization problems, specifically **L2-regularized logistic regression** and **L2-squared Support Vector Machine (SVM)** tasks
+The project is designed to efficiently solve large-scale machine learning optimization problems, specifically **L2-regularized logistic regression** and **L2-squared Support Vector Machine (SVM)** tasks.
 
 📄 The research is detailed in the accompanying paper:  
 **"[SVRG-2 using BB-approximation] A Stochastic Variance Reduced Technique using Barzilai-Borwein techniques as second order information"**
@@ -130,7 +130,7 @@ Convergence behavior of SVRG variants showing reduction in cost per epoch and SV
 <img src="Figures/Gisette-1.0e-05-Opt_Epoch.png" width="40%">
 
 #### 2. Optimality Gap vs. CPU Time
-Illustrates computational efficiency of each SVRG variant. Also, SVRG-2BB outperforms other methods.
+Illustrates computational efficiency of each SVRG variant.
 
 <img src="Figures/Legend.png" width="50%">
 <img src="Figures/Gisette-1.0e-05-Opt_Time.png" width="40%">
