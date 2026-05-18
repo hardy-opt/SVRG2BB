@@ -130,7 +130,7 @@ Convergence behavior of SVRG variants showing reduction in cost per epoch and SV
 <img src="Figures/Gisette-1.0e-05-Opt_Epoch.png" width="40%">
 
 #### 2. Optimality Gap vs. CPU Time
-Illustrates computational efficiency of each SVRG variant.
+Illustrates computational efficiency of each SVRG variant
 
 <img src="Figures/Legend.png" width="50%">
 <img src="Figures/Gisette-1.0e-05-Opt_Time.png" width="40%">
